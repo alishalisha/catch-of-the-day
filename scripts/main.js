@@ -12,6 +12,7 @@ var helpers = require('./helpers');
 
 // Firebase
 var Rebase = require('re-base');
+var base = Rebase.createClass('https://scorching-fire-5945.firebaseio.com/');
 
 /*
   App
@@ -24,7 +25,14 @@ var App = React.createClass({
       fishes : {},
       order : {}
     }
+  },
 
+  componentDidMount : function() {
+    // get the state from Firebase
+    base.syncState(this.props.params.storeId + '/fishes', {
+      context : this,
+      state : 'fishes'
+    });
   },
 
   addToOrder : function(key) {
