@@ -10,6 +10,8 @@ var createBrowserHistory = require('history/lib/createBrowserHistory');
 
 var helpers = require('./helpers');
 
+// Firebase
+var Rebase = require('re-base');
 
 /*
   App
