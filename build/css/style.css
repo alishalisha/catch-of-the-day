@@ -519,10 +519,10 @@ ul.order li span span {
 }
 .menu-fish p {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .menu-fish .fish-name {
-  margin: 0;
+  margin: 0 0 10px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
